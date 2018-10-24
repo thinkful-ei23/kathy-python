@@ -5,13 +5,22 @@
 
 ## Music House
 ### each room is a different puzzle
-* red door = rhythm patterns
+* red door = guess rhythm patterns
 * orange door = arioso
 * yellow door = music math
-* green door = pitch patterns
-* blue door = letter names
-* git apurple door = composition (aleatoric?)
+* green door = echo rhythm patterns
+* blue door = decode rhythm patterns
+* purple door = composition (aleatoric?)
 
 ## Music Apartment Building
 ### each floor is a different tonal puzzle
 
+* E line 1 = guess tonal patterns
+* G line 2 = arioso
+* B line 3 = music words
+* D line 4 = pitch patterns
+* F line 5 = letter names
+* F space 1 = composition (aleatoric?)
+* A space 2 = composition (finish the phrase?)
+* C space 3 = composition (aleatoric?)
+* E space 4 = composition (aleatoric?)
