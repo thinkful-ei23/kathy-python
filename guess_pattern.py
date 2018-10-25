@@ -1,3 +1,4 @@
+import pygame
 from random import randint
 
 # list of numbers relating to CS Unit 1 patterns
@@ -8,6 +9,7 @@ dicPatt = {1: 1211, 2: 2121, 3: 2211,
 dicImage = {1: 1, 2: 2, 3: 3,
             + 4: 4, 5: 5, 6: 6,
             + 7: 7, 8: 8}
+
 
 start = 1
 end = 8
