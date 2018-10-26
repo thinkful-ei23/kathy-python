@@ -24,3 +24,7 @@
 * A space 2 = composition (finish the phrase?)
 * C space 3 = composition (aleatoric?)
 * E space 4 = composition (aleatoric?)
+
+
+#### pip install -r
+* requirements.txt
