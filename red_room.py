@@ -63,16 +63,11 @@ running = True
 # -----------------------------------------EVENT for BTN
 
 
-
 # -----------------------------------------
 def update_patt(clicks):
-    playerList.insert(-1, )
+    playerList.append(clicks)
     pygame.draw.rect(screen, (255, 153, 000), (25, 100, 75, 50), 0)
-    screen.blit(font.render(str(clicks),
-                            True, (000, 255, 000)), (25, 100))
     screen.blit(font.render(str(playerList), True, (000, 000, 255)), (50, 100))
-
-# insert
 # -----------------------------------------
 
 
