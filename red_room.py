@@ -7,13 +7,26 @@ from random import randint
 pygame.init()
 pygame.display.init()
 # -----------------------------------------
-
 screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Music House - Red door")
 done = False
 # -----------------------------------------BACKGROUND
 screen.fill((204, 0, 0))
-bottom_dash = pygame.draw.rect(screen, (0, 0, 0), (0, 350, 640, 440), 0)
+bottom_dash = pygame.draw.rect(screen, (212, 212, 212), (0, 350, 640, 440), 0)
+
+
+# class Background(pygame.sprite.Sprite):
+#     def __init__(self, red, screen):
+#         pygame.sprite.Sprite.__init__(self)  # call Sprite initializer
+#         self.image = pygame.image.load("img/red.mist.jpg")
+#         self.Simage = pygame.transform.scale(self.image, (640, 480))
+#         self.rect = self.Simage.get_rect()
+#         self.rect.left, self.rect.top = 0, 0
+
+
+# BackGround = Background("img/red.mist.jpeg", [0, 0])
+# bottom_dash = pygame.draw.rect(screen, (0, 0, 0), (0, 350, 640, 440), 0)
+pygame.display.update()
 
 # -----------------------------------------BUTTONS
 quarter1 = pygame.image.load('img/quarter1.png')
@@ -35,7 +48,6 @@ text2 = font.render(" to build a rhythm pattern", True, (111, 111, 111))
 screen.blit(text1, (10, 380))
 screen.blit(text2, (10, 415))
 pygame.display.update()
-
 
 # -----------------------------------------VARIABLES
 # list of numbers relating to CS Unit 1 patterns
@@ -72,6 +84,8 @@ def update_patt(clicks):
 
 
 while running:
+    # screen.fill([255, 255, 255])
+    # screen.blit(BackGround.image, (0, 0))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -82,10 +96,10 @@ while running:
                 clicks = 1
                 # update_disp(font, quarter_clicks)
                 update_patt(clicks)
-            elif x > 529 and x < 630 and y > 369 and y < 470:
-                clicks = 2
-                # update_disp(font, eighth_clicks)
-                update_patt(clicks)
+        elif x > 529 and x < 630 and y > 369 and y < 470:
+            clicks = 2
+            # update_disp(font, eighth_clicks)
+            update_patt(clicks)
         if event.type == pygame.KEYDOWN:
             if event.key == K_r:
                 clicks = 0
@@ -96,7 +110,7 @@ while running:
 #         if event.type == pygame.QUIT:
 #             done = True
 
-    pygame.display.flip()
+pygame.display.flip()
 
 # Finish Pygame.
 pygame.quit()

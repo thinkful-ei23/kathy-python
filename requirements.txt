@@ -1,2 +1,12 @@
-python3
-pygame
+mport pygame
+import pygame.display
+import os
+import sys
+from pygame.locals import *
+from random import randint
+
+
+import pygame
+import os
+import sys
+from random import randint
